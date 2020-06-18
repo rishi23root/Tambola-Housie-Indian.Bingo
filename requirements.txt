@@ -1,0 +1,6 @@
+need to execute:-
+
+pip install gtts
+pip install playsound
+python create_audios_of_nums.py
+
