@@ -24,3 +24,5 @@ Tambola/housie Indian.Bingo have a prity high price to play and why would we giv
 <p align="left">
   <img src=https://github.com/rishabhjainfinal/Tambola-Housie-Indian.Bingo/blob/master/cost.png >
 </p>
+
+so from this project we save about **₹750 ~ $9.78 **
