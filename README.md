@@ -1,5 +1,5 @@
 # Tambola-Housie-Indian.Bingo
-created by Rishabh Jain Github [https://github.com/rishabhjainfinal] instagram(https://www.instagram.com/rishi23jain/)
+Created by Rishabh Jain Github [https://github.com/rishabhjainfinal] instagram(https://www.instagram.com/rishi23jain/)
 
 All the requirements are define in requirements.txt
 but you don't have do it manualy
@@ -13,3 +13,14 @@ you are all set start with tabbola.py to get completly random numbers to plays a
   <img src=https://github.com/rishabhjainfinal/Tambola-Housie-Indian.Bingo/blob/master/Screenshot%20(41).png >
 </p>
 
+pricing :-
+<p align="left">
+  <img src=https://github.com/rishabhjainfinal/Tambola-Housie-Indian.Bingo/blob/master/Screenshot%20(42).png >
+</p>
+
+In some days i will add a new file to generate completly random chits also which makes it completly sequrely random and free
+Tambola/housie Indian.Bingo have a prity high price to play and why would we give them if we can make of owr own in minutes and for free with python
+
+<p align="left">
+  <img src=https://github.com/rishabhjainfinal/Tambola-Housie-Indian.Bingo/blob/master/cost.png >
+</p>
