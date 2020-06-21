@@ -15,7 +15,7 @@ you are all set start with tabbola.py to get completly random numbers to plays a
 
 pricing :-
 <p align="left">
-  <img src=https://github.com/rishabhjainfinal/Tambola-Housie-Indian.Bingo/blob/master/Screenshot%20(42).png >
+  <img src=https://github.com/rishabhjainfinal/Tambola-Housie-Indian.Bingo/blob/master/info.png >
 </p>
 
 In some days i will add a new file to generate completly random chits also which makes it completly sequrely random and free
