@@ -10,12 +10,12 @@ but you don't have do it manualy
 you are all set start with tabbola.py to get completly random numbers to plays and inside this folder you can manage according to your requirement
 
 <p align="center">
-  <img src=https://github.com/rishabhjainfinal/Tambola-Housie-Indian.Bingo/blob/master/Screenshot%20(41).png >
+  <img src=https://github.com/rishabhjainfinal/Tambola-Housie-Indian.Bingo/blob/master/info.png >
 </p>
 
 pricing :-
 <p align="left">
-  <img src=https://github.com/rishabhjainfinal/Tambola-Housie-Indian.Bingo/blob/master/info.png >
+  <img src=https://github.com/rishabhjainfinal/Tambola-Housie-Indian.Bingo/blob/master/Screenshot%20(42).png >
 </p>
 
 In some days i will add a new file to generate completly random chits also which makes it completly sequrely random and free
