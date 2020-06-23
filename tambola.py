@@ -1,7 +1,6 @@
 import random
 from playAudios import play_sound as play
 from time import sleep as nap
-import threading 
 
 def start_playing(method='nap',napTime=2.5):
 	num=[i for i in range(1,91)]
@@ -26,7 +25,10 @@ def start_playing(method='nap',napTime=2.5):
 			num.remove(a)
 			# threading.Thread(target=play,args=(f'sounds/{a}.mp3',)).start()
 			# print(a)
-			print('\033[93m' + str(a) + '\033[0m')
+ 			# print('\033[93m' + str(a) + '\033[0m')
+			print()
+			print(a)
+			print()
 			done.insert(0, a)
 			done.sort()
 			
