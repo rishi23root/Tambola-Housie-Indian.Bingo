@@ -6,8 +6,9 @@ but you don't have do it manualy
  - start complete_requirements and it will do all in about 2 min
     1. it will import modules
     2. it will make a sounds folder and make several mp3 file for sound 
+    3. it will generate n number of chits for game that you provide 
 
-you are all set start with tabbola.py to get completly random numbers to plays and inside this folder you can manage according to your requirement
+you are all set to start with tabola.py to get completly random numbers to plays and inside this file you can manage according to your requirement
 
 <p align="center">
   <img src=https://github.com/rishabhjainfinal/Tambola-Housie-Indian.Bingo/blob/master/info.png >
