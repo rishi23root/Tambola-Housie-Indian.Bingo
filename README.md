@@ -2,6 +2,8 @@
 Created by Rishabh Jain Github [https://github.com/rishabhjainfinal] instagram(https://www.instagram.com/rishi23jain/)
 
 All the requirements are define in requirements.txt
+***you have to satisfy requirements to run other file***
+
 but you don't have do it manualy
 
  - **start complete_requirements.py and it will do all in about 2 min**
