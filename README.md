@@ -3,13 +3,21 @@ Created by Rishabh Jain Github [https://github.com/rishabhjainfinal] instagram(h
 
 All the requirements are define in requirements.txt
 but you don't have do it manualy
- - start complete_requirements and it will do all in about 2 min
+
+
+- start complete_requirements.py and it will do all in about 2 min
     1. it will import modules
-    2. it will make a sounds folder and make several mp3 file for sound 
-    3. it will generate n number of chits for game that you provide 
+    2. it will make a sounds folder and make several mp3 file for sound use in game
+    3. it will generate 'n' number of chits for game that you will provide 
+    <p align="left">
+         <img src=https://github.com/rishabhjainfinal/Tambola-Housie-Indian.Bingo/blob/master/readme%20requirement/chit%20generator.png >
+   </p>
+  
 
-you are all set to start with tabola.py to get completly random numbers to plays and inside this file you can manage according to your requirement
-
+you are all set to start with tabola.py to get completly random numbers to plays
+ - Inside this file you can manage according to your requirement 
+    1. Input method *(default)*
+    2. nap method
 <p align="center">
   <img src=https://github.com/rishabhjainfinal/Tambola-Housie-Indian.Bingo/blob/master/readme%20requirement/info.png >
 </p>
@@ -19,8 +27,9 @@ pricing :-
   <img src=https://github.com/rishabhjainfinal/Tambola-Housie-Indian.Bingo/blob/master/readme%20requirement/Screenshot%20(42).png >
 </p>
 
-In some days i will add a new file to generate completly random chits also which makes it completly sequrely random and free
-Tambola/housie Indian.Bingo have a prity high price to play and why would we give them if we can make of owr own in minutes and for free with python
+To generate completly random chits you can run chits_generator.py and print its output 
+Tambola/housie Indian.Bingo have a high price to play
+why would we give them if we can make of owr own in minutes and for free with python
 
 <p align="left">
   <img src=https://github.com/rishabhjainfinal/Tambola-Housie-Indian.Bingo/blob/master/readme%20requirement/cost.png>
