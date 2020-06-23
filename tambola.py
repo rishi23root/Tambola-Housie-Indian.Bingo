@@ -80,6 +80,9 @@ def start_playing(method='nap',napTime=2.5):
 			print('line 81-90',l90)
 			print()
 			play(f'sounds/{a}.mp3')
+			
+			if i==90:
+			    nap(5)
 
 		else :
 			print('no num left')
