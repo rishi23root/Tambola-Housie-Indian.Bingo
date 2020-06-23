@@ -85,7 +85,7 @@ def start_playing(method='nap',napTime=2.5):
 
 start_playing(method='input')
 # you have to press enter every single time to get new number
-start_playing(method='input')
+# start_playing(method='nap',napTime=2.5)
 # you have to wait=(napTime) every single time to get new number
 
 # for automate with time disadvantage is unable to pause with time inform me if you can help thanks
