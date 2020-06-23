@@ -2,5 +2,5 @@ need to execute:-
 
 pip install gtts
 pip install playsound
-python chits_generator.py
 python create_audios_of_nums.py
+python chits_generator.py
