@@ -69,7 +69,7 @@ def start_playing(method='nap',napTime=2.5):
 					l90.sort()
 	    		
 			# print(done)
-			print('line 0-1',l10)
+			print('line 0-1  ',l10)
 			print('line 11-20',l20)
 			print('line 21-30',l30)
 			print('line 31-40',l40)
