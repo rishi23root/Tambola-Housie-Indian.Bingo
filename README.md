@@ -22,14 +22,20 @@ you are all set to start with tabola.py to get completly random numbers to plays
   <img src=https://github.com/rishabhjainfinal/Tambola-Housie-Indian.Bingo/blob/master/readme%20requirement/info.png >
 </p>
 
+To generate completly random chits you can run chits_generator.py and print its output 
+<p align="left">
+     <img src=https://github.com/rishabhjainfinal/Tambola-Housie-Indian.Bingo/blob/master/readme%20requirement/chit%20generator.png >
+</p>
+  
+
 pricing :-
+
+Tambola/housie Indian.Bingo have a high price to play
+why would we give them if we can make of owr own in minutes and for free with python
+
 <p align="left">
   <img src=https://github.com/rishabhjainfinal/Tambola-Housie-Indian.Bingo/blob/master/readme%20requirement/Screenshot%20(42).png >
 </p>
-
-To generate completly random chits you can run chits_generator.py and print its output 
-Tambola/housie Indian.Bingo have a high price to play
-why would we give them if we can make of owr own in minutes and for free with python
 
 <p align="left">
   <img src=https://github.com/rishabhjainfinal/Tambola-Housie-Indian.Bingo/blob/master/readme%20requirement/cost.png>
