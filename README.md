@@ -8,7 +8,7 @@ but you don't have do it manualy
 - start complete_requirements.py and it will do all in about 2 min
     1. it will import modules
     2. it will make a sounds folder and make several mp3 file for sound use in game
-    3. it will generate 'n' number of chits for game that you will provide 
+    3. it will generate 'n' number of chits for game that you will provide output save in Tambola tickets.txt
     <p align="left">
          <img src=https://github.com/rishabhjainfinal/Tambola-Housie-Indian.Bingo/blob/master/readme%20requirement/chit%20generator.png >
    </p>
@@ -22,7 +22,7 @@ you are all set to start with tabola.py to get completly random numbers to plays
   <img src=https://github.com/rishabhjainfinal/Tambola-Housie-Indian.Bingo/blob/master/readme%20requirement/info.png >
 </p>
 
-To generate completly random chits you can run chits_generator.py and print its output 
+To generate completly random chits you can run chits_generator.py and print its output saved in Tambola tickets.txt
 <p align="left">
      <img src=https://github.com/rishabhjainfinal/Tambola-Housie-Indian.Bingo/blob/master/readme%20requirement/chit%20generator.png >
 </p>
