@@ -42,4 +42,15 @@ why would we give them if we can make of owr own in minutes and for free with py
   <img src=https://github.com/rishabhjainfinal/Tambola-Housie-Indian.Bingo/blob/master/readme%20requirement/cost.png>
 </p>
 
-so from this project we save about **₹750 ~ $9.78**
+**cost of chits seperatly ~₹250 
+and you will get only 1800 chits,
+with my code you can generate ∞(infinite) numbers of chits in some sec depends on your computer speed **
+<p align="left">
+  <img src=https://github.com/rishabhjainfinal/Tambola-Housie-Indian.Bingo/blob/master/readme%20requirement/Screenshot%20(45).png>
+</p>
+
+
+so from the numbers and one time chits which is equavelent to one box we save about **₹750 ~ $9.78**
+adding the generation of chits for free it upto you how many chits you can produce lets make a round of **₹2000 **
+**so from this project we save about **₹3000 ~ $9.78**
+
