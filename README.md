@@ -51,5 +51,5 @@ with my code you can generate ∞(infinite) numbers of chits in some sec depends
 
 so from the numbers and one time chits which is equavelent to one box we save about **₹750 ~ $9.78**
 adding the generation of chits for free it upto you how many chits you can produce lets make a round of **₹2000 **
-**so from this project we save about ₹3000 ~ $40**
+##so from this project we save about ₹3000 ~ $40**
 
