@@ -222,4 +222,5 @@ if re != 0 :
 	save_chits_in_file(how_many_chits=re)
 else:
 	print("No chits saved")
-	time.sleep(2
+	time.sleep(2)
+	
