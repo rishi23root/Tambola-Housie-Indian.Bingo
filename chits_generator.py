@@ -1,4 +1,5 @@
 import random
+import time
 
 def random15Numbers():
 	# create dic and numbers from 1 to 90
@@ -217,4 +218,8 @@ def save_chits_in_file(how_many_chits=1,number_to_start=0):
 			file.writelines('\n')
 
 re=int(input('Enter the number of chits require :'))
-save_chits_in_file(how_many_chits=re)
+if re != 0 :
+	save_chits_in_file(how_many_chits=re)
+else:
+	print("No chits saved")
+	time.sleep(2
