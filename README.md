@@ -1,7 +1,13 @@
 # Tambola-Housie-Indian.Bingo
-Created by Rishabh Jain Github [https://github.com/rishabhjainfinal] instagram(https://www.instagram.com/rishi23jain/)
+
+## starting by cloning repo
+```
+git clone https://github.com/rishabhjainfinal/Tambola-Housie-Indian.Bingo.git
+cd Tambola-Housie-Indian.Bingo
+```
 
 All the requirements are define in requirements.txt
+
 ***you have to satisfy requirements to run other file***
 
 but you don't have do it manualy use 
@@ -10,8 +16,7 @@ but you don't have do it manualy use
 
  - **start complete_requirements.py and it will do all in about 2 min**
     1. **it will import modules**
-    2. **it will make a sounds folder and make several mp3 file for sound use in game**
-    3. **it will generate 'n' number of chits for game that you will provide output save in Tambola tickets.txt**
+    2. **it will generate 'n' number of chits for game that you will provide output save in Tambola tickets.txt**
     <p align="left">
          <img src=https://github.com/rishabhjainfinal/Tambola-Housie-Indian.Bingo/blob/master/readme%20requirement/chit%20generator.png >
    </p>
@@ -22,7 +27,7 @@ you are all set to start with tabola.py to get completly random numbers to plays
     1. Input method **(default)**
     2. nap method
 <p align="center">
-  <img src=https://github.com/rishabhjainfinal/Tambola-Housie-Indian.Bingo/blob/master/readme%20requirement/info.png >
+  <img src=https://github.com/rishabhjainfinal/Tambola-Housie-Indian.Bingo/blob/master/readme%20requirement/info1.png >
 </p>
 
 To generate completly random chits you can run chits_generator.py and print its output saved in Tambola tickets.txt
