@@ -16,8 +16,8 @@ cd Tambola-Housie-Indian.Bingo
 
 you are all set to start with tabola.py to get completly random numbers to plays
 there is 2 possible way to play 
-1. GUI version `python tambola_gui.py`
-2. commend line `python tambola_gui.py -c`
+1. GUI version `python tambola.py`
+2. commend line `python tambola.py -c`   nap mode is default in this use `-i` for input mode
 
 ```python
 # example
