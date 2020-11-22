@@ -260,6 +260,8 @@ class tambola_gui(tambola) :
 			raise Exception('Unable to find the tile')
 
 	def number_gen(self,clas):
+		# wait for 2sec before painting 
+		nap(2) 
 		for i in clas.start_playing_gui():
 			clas.update_tiles(i)
 			play(f'sounds/{i}.mp3')    #################un comment it
@@ -270,10 +272,7 @@ class tambola_gui(tambola) :
 	def tam(cls):
 		root = Tk()
 		clas = cls(root)		
-		# clas.reverse_status()
-		Thread(target=clas.number_gen,args=[clas]).start()
-		# clas.update_tiles(14)
-
+		Thread(target=clas.number_gen,args=[clas],daemon=True).start()
 		# execution
 		root.mainloop()
 
