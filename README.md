@@ -10,7 +10,7 @@ cd Tambola-Housie-Indian.Bingo
 `pip install -r requirements.txt`
 
 
-** Run `python chits_generator.py` it will generate given number of chits for game that you will provide output save in Tambola tickets.txt**
+**Run `python chits_generator.py` it will generate given number of chits for game that you will provide output save in Tambola tickets.txt**
 <p align="left"><img src=https://github.com/rishabhjainfinal/Tambola-Housie-Indian.Bingo/blob/master/readme%20requirement/chit%20generator.png ></p>
   
 
@@ -27,7 +27,9 @@ there is 2 possible way to play
 # changing nap time => 'python tambola.py -c -i -t 2.5'
 ```
 
-
+<p align="left">
+  <img src=https://github.com/rishabhjainfinal/Tambola-Housie-Indian.Bingo/blob/rishabhjainfinal-patch-1/readme%20requirement/Screenshot%20(40).png>
+</p>
 
 --------
 ## pricing :-
