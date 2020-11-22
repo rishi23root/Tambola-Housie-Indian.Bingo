@@ -1,226 +1,120 @@
+# python chits_generator.py
 import random
-import time
-
-def random15Numbers():
-	# create dic and numbers from 1 to 90
-	num={}
-	num['num10'] =[i for i in range(1,11)]
-	num['num20'] =[i for i in range(11,21)]
-	num['num30'] =[i for i in range(21,31)]
-	num['num40'] =[i for i in range(31,41)]
-	num['num50'] =[i for i in range(41,51)]
-	num['num60'] =[i for i in range(51,61)]
-	num['num70'] =[i for i in range(61,71)]
-	num['num80'] =[i for i in range(71,81)]
-	num['num90'] =[i for i in range(81,91)]
-
-	# count variable to don't execede from more then 3 num in coloum and 15 in total  
-	count={}
-	count['num10'] = 0
-	count['num20'] = 0
-	count['num30'] = 0
-	count['num40'] = 0
-	count['num50'] = 0
-	count['num60'] = 0
-	count['num70'] = 0
-	count['num80'] = 0
-	count['num90'] = 0
-
-	# all selected num save in selected
-	selected=[]
-
-	# step1
-	# chose first 9 nums
-	for j in range(1,10):
-		ch=	random.choice(num[f'num{j}0']) 
-		selected.append(ch)
-		count[f'num{j}0'] += 1
-		num[f'num{j}0'].remove(ch)
 
 
-	# step2
-	# next 6 remaining nums
-	whole_list = [i for i in range(1,91)]
-	# remove pre selected 9 for proceed
-	for i in selected:
-		whole_list.remove(i)
+def chit():
+    num={}
+    num['num10'] =[i for i in range(1,11)]
+    num['num20'] =[i for i in range(11,21)]
+    num['num30'] =[i for i in range(21,31)]
+    num['num40'] =[i for i in range(31,41)]
+    num['num50'] =[i for i in range(41,51)]
+    num['num60'] =[i for i in range(51,61)]
+    num['num70'] =[i for i in range(61,71)]
+    num['num80'] =[i for i in range(71,81)]
+    num['num90'] =[i for i in range(81,91)]
 
-	# print(whole_list)
-	while len(selected) < 15:
-		numlist = ['num10','num20','num30','num40','num50','num60','num70','num80','num90' ]
+    results ={}
+    # target => select 15 numbers
+    for key,value in zip(num.keys(),num.values()):
+        # 1. select each one from 10 steps (9 done,6 left)
+        results[key] = [num[key].pop(num[key].index(random.choice(value)))]
 
-		n = random.choice(whole_list)
-		# print(n)
+    # 2. while loop to run the program till 15 number will selected and not 3 more then 10 gap
+    while len([j for i in results.values() for j in i]) < 15:
+        # 1. randomly choice from list of the num list
+        key = random.choice(list(num.keys()))
+        # 2. check if there is less then 3 else continue
+        if len(results[key]) < 3 :
+            # randomly choice element and add to the results list and pop from num list
+            results[key].append(num[key].pop(num[key].index(random.choice(num[key]))))
+        else:
+            continue
+    else :
+        # no break else to sort the results lists at last
+        [results[result].sort() for result in results]
 
-		for i in numlist:
-			if (n in num[i]) and (n in whole_list):
-				count[i] += 1
-				selected.append(n)
-			else:
-				pass 
-		
+    ### arranging in the order of requirement  ####
+    chit = [[' ',' ',' ',' ',' ',' ',' ',' ',' '],
+            [' ',' ',' ',' ',' ',' ',' ',' ',' '],
+            [' ',' ',' ',' ',' ',' ',' ',' ',' ']]
+    row_c1,row_c2 = [],[]
 
-		for i in numlist:
-			if count[i] == 3:
-				for k in num[i]:
-					if k in whole_list:
-						whole_list.remove(k)
-			else:
-				pass
+    # 1. first check if any list have 3 element if true append in chit
+    for index,value in enumerate(results.values()):
+        if len(value) == 3 :
+            key = list(results.keys())[index]
+            row_c1.append(key)
+            row_c2.append(key)
+            for i,item in enumerate(value) :
+                chit[i][index] = str(item)
+    else :
+        # clearing all the done list
+        for ele in row_c1:
+            del results[ele]
+        # complete the first row
+        row = 0 # current row
+        for i in range(5-len(row_c1)):
+            # loop lill new key doesnot found
+            while True:
+                key = random.choice(list(results.keys()))
+                if key not in row_c1 : break
+            index = int(list(num.keys()).index(key))
+            value = results[key].pop(0)
+            row_c1.append(key)
+            chit[row][index] = str(value)
+            if results[key] == []:
+                del results[key]
 
-	selected.sort()
+    # 2. check if any list have 2 element if true append in chit
+    for key,value in zip(results.keys(),results.values()) :
+        if len(value) == 2 :
+            row_c2.append(key)
+            index = list(num.keys()).index(key)
+            for i,item in enumerate(value,1) :
+                chit[i][index] = str(item)
+    else:
+        # clearing all the done list
+        for ele in row_c2:
+            try:
+                del results[ele]
+            except:
+                pass
 
-	sum=0
-	for i in count:
-		sum += count[i]
+        # complete the second row
+        row = 1 # current row
+        for i in range(5-len(row_c2)):
+            # loop till new key doesnot found
+            while True:
+                key = random.choice(list(results.keys()))
+                if key not in row_c2 : break
+            index = int(list(num.keys()).index(key))
+            value = results[key].pop(0)
+            row_c1.append(key)
+            chit[row][index] = str(value)
+            if results[key] == []:
+                del results[key]
 
-	if sum != 15:
-		# print(selected)
-		# print(count)
-		chit()
-	else:
-		pass
-		# print(selected)
+    # complete the third row
+    for key,value in zip(results.keys(),results.values()):
+        chit[2][list(num.keys()).index(key)] = str(value[0])
 
-
-
-	# count ,selected=chit()
-	value={}
-	value['num10']=[]
-	value['num20']=[]
-	value['num30']=[]
-	value['num40']=[]
-	value['num50']=[]
-	value['num60']=[]
-	value['num70']=[]
-	value['num80']=[]
-	value['num90']=[]
-
-	for i in count:
-		for j in range(count[i]):
-			value[i].append(selected[0])
-			selected.remove(selected[0])
-		
-	# print(value)
-
-	return numlist,value
-
-	
-
-
-# for i in range(1):
-
-def arrangementsOfNums():
-
-	numlist,value =	random15Numbers()
-
-	# print(numlist)
-	# print(value)
-
-	final1=[' ',' ',' ',' ',' ',' ',' ',' ',' ']
-	final2=[' ',' ',' ',' ',' ',' ',' ',' ',' ']
-	final3=[' ',' ',' ',' ',' ',' ',' ',' ',' ']
-	count1 = 0
-	count2 = 0
-	numlist1 = []
-	numlist2 = []
-
-	# FOR FIRST ROW
-	# first check if any number list len == 3 
-	# if true count+1 and add it to final1 of its index 
-	# and remove it from value
-	# chose randomly from the numlist and append them in their possitions then 
-	# if count > 5 break
-
-	# similar for final2 and final3 just len == 2 and all remainings respectively
-	# then save data in file with random ticket number 
-
-	# loop for row 1
-	while count1 < 5:
-		for i in numlist:
-			if len(value[i]) == 3:
-				numlist1.append(i)
-				a = value[i][0]
-				value[i].remove(a)
-				index = numlist.index(i)
-				final1[index] = a
-				count1+=1
-
-		foo = random.choice(numlist)
-		if foo not in numlist1:
-			# save that its done
-			numlist1.append(foo)
-			a = value[foo][0]
-			value[foo].remove(a)
-			index = numlist.index(foo)
-			final1[index] = a
-			count1+=1
-
-	# loop for row 2
-	while count2 < 5:
-		for i in numlist:
-			if len(value[i]) == 2:
-				numlist2.append(i)
-				a = value[i][0]
-				value[i].remove(a)
-				index = numlist.index(i)
-				final2[index] = a
-				count2+=1
-
-		foo = random.choice(numlist)
-		if foo not in numlist2:
-			numlist2.append(foo)
-			if len(value[foo]) != 0:
-				# save that its done
-				a = value[foo][0]
-				value[foo].remove(a)
-				index = numlist.index(foo)
-				final2[index] = a
-				count2 += 1
-
-	# for third and final row there is two methods
-
-	# for i in numlist:
-	# 	index = numlist.index(i)
-	# 	if len(value[i]) != 0:
-	# 		final3[index] = value[i][0]
-
-	for index,number in enumerate(numlist):
-		if len(value[number]) != 0:
-			final3[index] = value[number][0]
+    return chit
 
 
-	# convert into 2 digit numbers
-	for i,n in enumerate(final1):
-		if type(final1[i]) == int:
-			final1[i] = str(n).zfill(2)
-
-	for i,n in enumerate(final2):
-		if type(final2[i]) == int:
-			final2[i] = str(n).zfill(2)
-		
-	for i,n in enumerate(final3):
-		if type(final3[i]) == int:
-			final3[i] = str(n).zfill(2)
-				
-	return [final1,final2,final3]
-
-
-def save_chits_in_file(how_many_chits=1,number_to_start=0):
-	for i,nu in enumerate([x for x in range(how_many_chits)],number_to_start):
-		head = f'  	 lottery ticket by Rishi - {i + 1}'
-		line1,line2,line3 = arrangementsOfNums()
-		with open("Tambola tickets.txt",'a') as file:
-			file.writelines(str(head)+'\n')
+def save_chits_in_file(how_many_chits=1,number_to_start=1):
+	with open("Tambola tickets.txt",'w') as file:
+		for i,nu in enumerate([x for x in range(how_many_chits)],number_to_start):
+			line1,line2,line3 = chit()
+			file.writelines(f'  	 lottery ticket by Rishi - {i}'+'\n')
 			file.writelines(str(line1)+'\n')
 			file.writelines(str(line2)+'\n')
 			file.writelines(str(line3)+'\n')
 			file.writelines('\n')
 
+# re = 5
 re=int(input('Enter the number of chits require :'))
 if re != 0 :
 	save_chits_in_file(how_many_chits=re)
-else:
-	print("No chits saved")
-	time.sleep(2)
-	
+else :
+	print('no chits saved')
